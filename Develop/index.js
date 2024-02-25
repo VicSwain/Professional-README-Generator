@@ -1,7 +1,8 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-
+const generateMarkdown = require('./utils/generateMarkdown');
+const formatReadMe = ('./utils/generateMarkdown')
 
 
 // TODO: Create an array of questions for user input
@@ -50,14 +51,20 @@ const readMeQuestions = [
 ]
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+const template = generateMarkdown(data)
+fs.writeFileSync(fileName, template)
+}
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer
     .prompt(readMeQuestions)
-    // .then((readMeData) => {
-    //   console.log(readMeData)
+    .then((data) => {
+      console.log(data)
+    writeToFile();
+    formatReadMe();
+    });
     //   const template = createReadMeTemplate(readMeData)
     //   fs.writeFileSync("sampleReadMe.md", template)
     //   // readMeData.confirm === readMeData.password // condition
