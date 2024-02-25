@@ -2,8 +2,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
-const formatReadMe = ('./utils/generateMarkdown')
-
 
 // TODO: Create an array of questions for user input
 const readMeQuestions = [
@@ -61,16 +59,8 @@ function init() {
     inquirer
     .prompt(readMeQuestions)
     .then((data) => {
-      console.log(data)
-    writeToFile();
-    formatReadMe();
+    writeToFile('sampleREADME.md', data);
     });
-    //   const template = createReadMeTemplate(readMeData)
-    //   fs.writeFileSync("sampleReadMe.md", template)
-    //   // readMeData.confirm === readMeData.password // condition
-    //   //   ? console.log('Success!') // if the condition is true
-    //   //   : console.log('You forgot your password already?!') // else if the condition is false
-    //  } );
     }
 
 
