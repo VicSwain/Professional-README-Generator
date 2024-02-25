@@ -56,8 +56,9 @@ function writeToFile(fileName, data) {}
 function init() {
     inquirer
     .prompt(readMeQuestions)
-    // .then((readMeData) => {
-    //   console.log(readMeData)
+    .then((readMeData) => {
+      console.log(readMeData)
+    });
     //   const template = createReadMeTemplate(readMeData)
     //   fs.writeFileSync("sampleReadMe.md", template)
     //   // readMeData.confirm === readMeData.password // condition
