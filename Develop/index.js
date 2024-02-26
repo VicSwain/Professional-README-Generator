@@ -14,12 +14,7 @@ const readMeQuestions = [
         type: 'input',
         message: 'Please provide a description of your project.',
         name: 'description',
-    },
-    {
-        type: 'input',
-        message: 'Please provide your Table of Contents.',
-        name: 'contents',
-    },
+    },   
     {
         type: 'input',
         message: 'Please provide installation intructions if needed, add none if this is not required.',
