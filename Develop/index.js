@@ -7,7 +7,7 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const readMeQuestions = [
     {
         type: 'input',
-        message: 'What is the tile of your project?',
+        message: 'What is the title of your project?',
         name: 'title',
     },
     {
@@ -17,17 +17,17 @@ const readMeQuestions = [
     },
     {
         type: 'input',
-        message: 'Please provide your Table of Contents',
+        message: 'Please provide your Table of Contents.',
         name: 'contents',
     },
     {
         type: 'input',
-        message: 'Provide installation intructions if needed, add none if this is not required.',
+        message: 'Please provide installation intructions if needed, add none if this is not required.',
         name: 'installation',
     },
     {   
         type: 'input',
-        message: 'Please provde the usage of your project.',
+        message: 'Please provide the usage of your project.',
         name: 'usage',
     },
     {
@@ -37,14 +37,14 @@ const readMeQuestions = [
     },
     {
         type: 'input',
-        message: 'Please enter the instructions to test',
+        message: 'Please enter the testing instructions.',
         name: 'tests',
     },
     {
         type: 'list',
         message: 'What license does your project hold?',
         name: 'license',
-        choices: ['Apache 2.0', 'GNU v3.0', 'MIT', 'BSD 2-Clause', 'BSD 3-Clause', 'Boost Software 1.0', 'Creative Commons Zero v1.0', 'Eclpse Public 2.0', 'GNU Affero V3.0', 'GNU V2.0', 'GNU Lesser v2.1', 'Mozilla 2.0', 'The Unlicense', 'None'],
+        choices: ['Apache 2.0', 'GPL v3.0', 'MIT', 'BSD 2-Clause', 'BSD 3-Clause', 'Boost Software 1.0', 'Creative Commons Zero v1.0','Mozilla 2.0', 'The Unlicense', 'None'],
     }, 
     {
         type: 'input',
