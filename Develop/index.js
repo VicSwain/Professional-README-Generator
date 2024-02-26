@@ -17,6 +17,11 @@ const readMeQuestions = [
     },
     {
         type: 'input',
+        message: 'Please provide your Table of Contents',
+        name: 'contents',
+    },
+    {
+        type: 'input',
         message: 'Provide installation intructions if needed, add none if this is not required.',
         name: 'installation',
     },
@@ -29,13 +34,18 @@ const readMeQuestions = [
         type: 'input',
         message: 'Please list any contributing parties, N/A if none.',
         name: 'contributing',
-    }, 
+    },
+    {
+        type: 'input',
+        message: 'Please enter the instructions to test',
+        name: 'tests',
+    },
     {
         type: 'list',
         message: 'What license does your project hold?',
         name: 'license',
         choices: ['Apache 2.0', 'GNU v3.0', 'MIT', 'BSD 2-Clause', 'BSD 3-Clause', 'Boost Software 1.0', 'Creative Commons Zero v1.0', 'Eclpse Public 2.0', 'GNU Affero V3.0', 'GNU V2.0', 'GNU Lesser v2.1', 'Mozilla 2.0', 'The Unlicense', 'None'],
-    },
+    }, 
     {
         type: 'input',
         message: 'What is your GitHub username?',
